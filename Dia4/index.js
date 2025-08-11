@@ -58,9 +58,9 @@ console.log('Total pedido: ',pedido1.total())
 const item= pedido1.items[0];
 console.log('Item conoce el ID del pedido?:','id' in item);
 
-const autor1 = new Autor(1,'Gabriel Garcia Marquez');
-const libro1= new Libro('9786287641587','100 años de soledad');
-const libro2= new Libro('9789580600015','Amor en los tiempos de cólera');
+let autor1 = new Autor(1,'Gabriel Garcia Marquez');
+let libro1= new Libro('9786287641587','100 años de soledad');
+let libro2= new Libro('9789580600015','Amor en los tiempos de cólera');
 
 console.log(libro1);
 console.log(autor1);
@@ -68,3 +68,16 @@ autor1.agregarLibro(libro1);
 autor1.agregarLibro(libro2);
 console.log(autor1);
 console.log(libro1);
+
+
+// tarea
+console.log('Antes de eliminar', autor1);
+console.log('libro antes',libro1);
+
+
+autor1.eliminarLibro(libro1);
+libro1 = null;
+
+
+console.log('eliminado', autor1);
+console.log('sin libro',libro1);
