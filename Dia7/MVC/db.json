@@ -1,1 +1,9 @@
-[{"id":1755094201947,"nombre":"harley6"},{"id":1755145898211,"nombre":"harley7"},{"id":1755148960764,"nombre":"harleyxd1"}]
+[
+    {
+        "id": 1,
+        "cedula": "1095803005",
+        "nombre": "harley",
+        "edad": "17",
+        "estrato": "2"
+    }
+]
