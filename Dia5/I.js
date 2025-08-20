@@ -1,5 +1,5 @@
 // I - Interface Segregation Principle (Principio de Segregación de Interfaces):
-
+// Cada clase debe implementar solo los metodos que utiliza
 // ejemplo malo
 
 class juguetesMalo {

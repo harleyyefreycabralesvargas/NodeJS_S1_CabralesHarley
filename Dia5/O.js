@@ -1,5 +1,5 @@
 // O - Open/Closed Principle (Principio Abierto/Cerrado):
-
+// Expandir no modificar
 // ejemplo malo
 console.log("#######################################################");
 

@@ -8,9 +8,13 @@ class Item {
     }
 }
 
-// Estado interno del modelo
-let _items = [];
-let _seq = 1;
+let _items = [{
+    id: 1,
+    nombre: "carro", 
+    descripcion:"carro de juguete",
+    creadoEn:" Wed Aug 20 2025 06:25:00 GMT-0500 (hora estándar de Colombia)",
+    actualizadoEn: "Wed Aug 20 2025 06:25:00 GMT-0500 (hora estándar de Colombia)"
+},];
 
-// Exportamos el "estado" y la clase Item
-module.exports = { Item, _items, _seq };
+console.log(_items.at(-1).id);
+module.exports = { Item, _items };

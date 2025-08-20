@@ -1,5 +1,5 @@
 // S - Single Responsibility Principle (Principio de Responsabilidad Única):
-
+// Solo una responsabilidad
 // ejemplo malo
 console.log("#######################################################");
 class directorMalo {

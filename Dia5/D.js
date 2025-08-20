@@ -1,5 +1,5 @@
 // D - Dependency Inversion Principle (Principio de Inversión de Dependencia):
-
+// que el padre no depeda del hijo (jerarquia)
 // ejemplo malo
 
 class perroMalo {

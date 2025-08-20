@@ -1,5 +1,5 @@
 // L - Liskov Substitution Principle (Principio de Sustitución de Liskov):
-
+// Estandarizar el padre
 // ejemplo malo
 
 class vehiculosMalo {
