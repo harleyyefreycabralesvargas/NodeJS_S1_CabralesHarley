@@ -1,8 +1,8 @@
-const { loadData, saveData } = require('../models/nombresModel');
-const prompt = require('prompt-sync')();
+let { loadData, saveData } = require('../models/nombresModel');
+let prompt = require('prompt-sync')();
 
 function createItem() {
-    const data = loadData();
+    let data = loadData();
     let contador=data.length;
     let id = contador+1;
     let cedula = prompt("Ingresa tu cedula: ");
@@ -19,7 +19,7 @@ function createItem() {
 }
 
 function listItems() {
-    const data = loadData();
+    let data = loadData();
     console.log("Lista de personas:");
     data.forEach(item => {
         console.log(`ID: ${item.id}, Cedula: ${item.cedula},Nombre: ${item.nombre},Edad: ${item.edad},Estrato: ${item.estrato}`);
@@ -27,8 +27,8 @@ function listItems() {
 }
 
 function updateItem() {
-    const data = loadData();
-    const datainicial= loadData();
+    let data = loadData();
+    let datainicial= loadData();
     let cedula = prompt("Ingresa la cedula de la persona que quieres actualizar: ");
     let nuevaCedula = prompt("Ingresa la nueva cedula: ");
     let nuevoNombre = prompt("Ingresa el nuevo nombre: ");
@@ -37,7 +37,7 @@ function updateItem() {
     function filtrarPorNombre(obj) {
         return obj.cedula === cedula;
     }
-    const item = data.find(filtrarPorNombre);
+    let item = data.find(filtrarPorNombre);
     if (item) {
         item.cedula = nuevaCedula;
         item.nombre = nuevoNombre;
@@ -59,7 +59,7 @@ function deleteItem() {
     function filtrarPorNombre(obj) {
         return obj.cedula !== cedula;
     }
-    const datosEliminados = data.filter(filtrarPorNombre);
+    let datosEliminados = data.filter(filtrarPorNombre);
     saveData(datosEliminados)
     console.log('Persona eliminada con cedula: ' + cedula);
 
