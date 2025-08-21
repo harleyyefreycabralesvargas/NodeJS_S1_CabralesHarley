@@ -8,9 +8,6 @@ class UserModel{
             edad:'number'
         };
     }
-
-
-    
     validar(usuario){
         for(let campo in this.schema){
             if (typeof usuario[campo] !== this.schema[campo]){
@@ -35,6 +32,5 @@ class UserModel{
         await connectDB.disconnect();
         return arreglo;
     }
-    
 }
 module.exports= UserModel;
